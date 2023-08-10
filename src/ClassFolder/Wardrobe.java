@@ -9,7 +9,6 @@ public class Wardrobe {
         this.height = height;
         this.weight = weight;
     }
-
     public int getWidth() {
         return width;
     }
@@ -24,5 +23,11 @@ public class Wardrobe {
 
     public void add() {
         System.out.println("Wardrobe added into Bedroom.");
+    }
+
+    @Override
+    public String toString() {
+        return "Wardrobe=> " + " width: " + getWidth() + " height: " +
+                getHeight() + " weight: " + getWeight();
     }
 }

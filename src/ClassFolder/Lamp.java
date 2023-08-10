@@ -14,6 +14,9 @@ public class Lamp {
         this.globRating = globRating;
     }
 
+    public Lamp(String material) {
+    }
+
     public void turnOn() {
         System.out.println("Lamp is being turned on.");
     }
@@ -28,5 +31,11 @@ public class Lamp {
 
     public int getGlobRating() {
         return globRating;
+    }
+
+    @Override
+    public String toString() {
+        return "Lamp=> " + " lamp style: " + getStyle() + "isBattery: " + isBattery() +
+                "global rating:" + getGlobRating();
     }
 }
